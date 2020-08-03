@@ -41,7 +41,7 @@ Node.prototype.addNode = function (n) {
     if (n.value < this.value) {
         if (this.left == null) {
             this.left = n;
-            this.left.x = this.x - 70;
+            this.left.x = this.x - 60;
             this.left.y = this.y + 80;
         } else {
             this.left.addNode(n);
@@ -49,8 +49,8 @@ Node.prototype.addNode = function (n) {
     } else if (n.value > this.value) {
         if (this.right == null) {
             this.right = n;
-            this.right.x = this.x + 60;
-            this.right.y = this.y + 70;
+            this.right.x = this.x + 70;
+            this.right.y = this.y + 80;
         } else {
             this.right.addNode(n);
         }
